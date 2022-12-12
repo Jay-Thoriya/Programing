@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>usong array</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="use"></p>
+        <p id="add"></p>
+        <script>
+            var boys = [ " Jay "," kevin", " raj "," king "," ravi"];
+            var  girls = [ " hasti" , " harsa ", " saksi ", " ravani"];
+            var childern = girls.concat(boys);
+            boys.pop();  // last aliment delete
+            girls.shift(); // frist aliment delete
+            boys.push("Ramesh");  // add last aliment (ramesh)
+            girls.unshift("shivani");  // add frist aliment (sivani)
+
+            boys[2]=" meet";  // change raj--> meet 
+            delete  girls[2];  // delete (saksi)
+
+            boys.splice(2,4," monil "," harsh"); // splic (kapvu)
+
+            boys.sort();  // alfabetic oders
+            girls.reverse(); // revers alfabetic oders
+
+            
+            document.getElementById("demo").innerHTML=boys.toString();
+            document.getElementById("use").innerHTML=girls.join(" - ");
+            document.getElementById("add").innerHTML=childern.join("  |  ");
+            </script>
+    </body>
+</html>

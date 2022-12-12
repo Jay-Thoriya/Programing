@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+              <title>Used Datatype</title>
+    </head>
+    <body>
+        <p Id="demo"></p>
+        <p Id="example"></p>
+        <p Id="string"></p>
+      <script type="text/javascript">
+          var age=30;                                                                //Number
+          var name="jay";                                                            //String
+          var cars=["BMW","venew","volvo","jegvar"];                                 //Arrays
+          var person={fristname:"jay",lastname:"thoriya",age:"19",eyecolor:"blue"};  //Objrct
+
+          var y=" We are the best  \"palyers \" in the words";     //Useing " \   \ " it not used then progra is not run
+            
+
+          document.getElementById("demo").innerHTML=age;
+          document.getElementById("demo").innerHTML=name;
+          document.getElementById("demo").innerHTML=cars.join(" ");
+          document.getElementById("demo").innerHTML="My Nmae is : " + name + " "+ person.lastname + "<br /> age is : "+
+          age + " <br />also Eyecolor is : " + person.eyecolor + "<br /> My Dream car is : " + cars[2];
+          
+          document.getElementById("example").innerHTML= " cars length is : "+cars.length;
+          document.getElementById("string").innerHTML=y;
+          
+
+      </script>
+    </body>
+</html>

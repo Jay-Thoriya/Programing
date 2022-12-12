@@ -1,0 +1,32 @@
+
+/* element selecter */
+
+p{color: darkgoldenrod;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+/* id selecter  */
+
+#second{ color: fuchsia;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+/* class selecter*/
+
+.thord{ color: chartreuse;
+  font-family: unset;
+  font: weight 99.34em;;
+}
+
+/*  grouping selecter */
+
+footer{color: red;
+  font-family: serif;
+  font-size: larger;
+  font-style: 23.45em   ;
+}
+
+

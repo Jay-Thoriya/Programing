@@ -1,0 +1,220 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch shap_formula",
+      "request": "launch",
+      "mainClass": "shap_formula",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch cell_phone",
+      "request": "launch",
+      "mainClass": "cell_phone",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch JayMain",
+      "request": "launch",
+      "mainClass": "JayMain",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Oops",
+      "request": "launch",
+      "mainClass": "Oops",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Fibonacci",
+      "request": "launch",
+      "mainClass": "Fibonacci",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch patten_rec",
+      "request": "launch",
+      "mainClass": "patten_rec",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch First_nth_number_sum",
+      "request": "launch",
+      "mainClass": "First_nth_number_sum",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch function_patten",
+      "request": "launch",
+      "mainClass": "function_patten",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch ricartion",
+      "request": "launch",
+      "mainClass": "ricartion",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Recartion_",
+      "request": "launch",
+      "mainClass": "Recartion_",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Method",
+      "request": "launch",
+      "mainClass": "Method",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Array_sort_or_not",
+      "request": "launch",
+      "mainClass": "Array_sort_or_not",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Maximum_array",
+      "request": "launch",
+      "mainClass": "Maximum_array",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch matrix_addition",
+      "request": "launch",
+      "mainClass": "matrix_addition",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch String_method",
+      "request": "launch",
+      "mainClass": "String_method",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch find_number_in_array",
+      "request": "launch",
+      "mainClass": "find_number_in_array",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Array_sum",
+      "request": "launch",
+      "mainClass": "Array_sum",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Multidimention_Array",
+      "request": "launch",
+      "mainClass": "Multidimention_Array",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Array",
+      "request": "launch",
+      "mainClass": "Array",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Factorial",
+      "request": "launch",
+      "mainClass": "Factorial",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Multiplication_table",
+      "request": "launch",
+      "mainClass": "Multiplication_table",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Even_sum",
+      "request": "launch",
+      "mainClass": "Even_sum",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Patten",
+      "request": "launch",
+      "mainClass": "Patten",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Bungee_jump",
+      "request": "launch",
+      "mainClass": "Bungee_jump",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Rock_paper_scissors",
+      "request": "launch",
+      "mainClass": "Rock_paper_scissors",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Loop",
+      "request": "launch",
+      "mainClass": "Loop",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Swich",
+      "request": "launch",
+      "mainClass": "Swich",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "c:/Users/Jay Thoriya/Desktop/c++",
+      "program": "c:/Users/Jay Thoriya/Desktop/c++/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/Program Files (x86)/mingw32/bin/gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

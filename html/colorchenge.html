@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8" />
+        <meta name="viewprot" content="width-device-width, initial-scale-1">
+        <title>Javascript Exercise</title>
+        <style>
+        img{
+            opacity: 0.0;
+          background-size: cover;
+        }
+        img:hover{
+            opacity: 1.0;
+        }
+        </style>
+    </head>
+    <body>
+
+       <div><img src="crypto.jpeg" width="100%" height="100%" /></div> 
+        <script>
+            var bgcolor=["#029FD4","#D43702","#1Eff00","#EAEAFF","#FFEA00","#FFFFFF","#AB5252","#DE28D8","#B8255F","#DB4035","#FF9933","#FAD000","#AFB83B","#6ACCBC","#158FAD","#14AAF5","#96C3EB","#884DFF","#AF38ED","#FF8D85","#808080","#CCAC93"];
+            document.body.style.background = bgcolor[Math.floor(Math.random()*bgcolor.length)];
+            
+        </script>
+    </body>
+
+</html>

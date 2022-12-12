@@ -1,0 +1,235 @@
+body {
+    margin: 1.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../web1/images/img4.jpg);
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; 
+    animation: introLoad 2s forwards;
+}
+nav{
+    transform: translate(100%);
+    transition: transform .5s ease-in-out;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+    
+}
+
+ul a {
+    color: black;
+    padding: .75em 2em ;
+    display: block;
+    width: 100%;
+}
+ul a:hover {
+    background: rgb(212, 210, 210);      
+}
+
+.close{
+    float: right;
+    margin: 2em;
+    width: 2.3em;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top:0;
+    background: white;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#lni_lni-squarespace {
+    width: 3em;
+    margin: 0em;
+    margin-top: -.6em;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 4em;
+    line-height: 3.3rem;
+}
+
+.subhead {
+    font-size: 1.4rem;
+}
+
+section.hero {
+    
+    color: white;
+    height: 70vh;
+}
+
+.more-info{
+
+}
+
+.more-info img{
+    width: 100%;
+    object-fit: cover;
+    height: 19em;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.desc {
+    line-height: 1.5rem;
+}
+
+
+
+@media screen and (min-width: 870px) {
+    body {
+        margin: 1.5em 5em ;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    } 
+
+}
+
+@media screen and (min-width: 1100px) {
+    #lni_lni-squarespace{
+      display: none;
+    }
+
+    nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    }
+    nav #lni_lni-close {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+    
+    ul a {
+        color: white;
+        padding: .5em 1.5em;
+        font-size: 1.5rem;
+
+    }
+        
+    ul a:hover{
+        background: none;
+        text-decoration: underline;
+    }  
+    
+    .hero-img 
+    {
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 42em;
+    }
+           
+    .logo  {
+        color: black;
+    }
+    
+    .logo span{
+        color: red;
+    }
+
+    section.hero {
+        color: black;
+        height: auto;
+        width: 40%;
+        margin-bottom: 16em;
+    }
+
+    .brand {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3em;
+        margin-bottom: 8em;
+    }
+
+    .brand img{
+        width: 27em;
+    }
+
+    .brand .content {
+        
+        text-align: right;
+        
+        width: 33em;
+    }
+
+    .brand.left {
+        grid-template-areas: "left right";
+    }
+
+    .brand.left img{
+        grid-area: left;
+    }
+
+    .brand.left .content{
+        text-align: left;
+        width: 25em;
+        justify-self: left;
+    }
+
+
+}      
+
+@media screen and (min-width: 1300px) {
+
+    .wrapper{     
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .brand{
+        gap: 0;
+    }
+}
+
+@keyframes introLoad {
+    from{
+        chip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    to{
+        chip-path:polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+    
+}

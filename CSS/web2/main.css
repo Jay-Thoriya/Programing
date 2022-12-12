@@ -1,0 +1,39 @@
+body{
+    margin: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.hero-img{
+    position: absolute;
+    top:0;
+    left:0;
+    background: url(../web2/image/dising30.jpg);
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 6em;
+}
+
+ul a{
+    color: black;
+    padding: 75em 2em;
+    display: block;
+    width: 100%;
+}
+
+ul a:hover{
+    background: aqua;
+}
