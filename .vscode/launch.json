@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Inheritans",
+      "request": "launch",
+      "mainClass": "Inheritans",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
       "name": "Launch Constracter",
       "request": "launch",
       "mainClass": "Constracter",
