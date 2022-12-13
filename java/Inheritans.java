@@ -27,7 +27,7 @@ public class Inheritans {
         
         // derived d = new derived(7,5);
 
-        chaid c = new chaid(2,3,5);
+        new chaid(2,3,5);
         
     }
     
