@@ -24,7 +24,7 @@ public class Gase_number {
             number_of_gusse += 1;
         }
         if(number_of_gusse>9){
-            System.err.println(" Game Over  ");;
+            System.err.println(" Game Over  ");
         }
         sc.close();
     }
