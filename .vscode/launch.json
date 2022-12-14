@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Dynamic_mathod",
+      "request": "launch",
+      "mainClass": "Dynamic_mathod",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
       "name": "Launch Find_direction",
       "request": "launch",
       "mainClass": "Find_direction",
