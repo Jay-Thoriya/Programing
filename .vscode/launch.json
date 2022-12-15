@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Abstract_class",
+      "request": "launch",
+      "mainClass": "Abstract_class",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
       "name": "Launch Library_Managment",
       "request": "launch",
       "mainClass": "Library_Managment",
