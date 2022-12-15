@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resistetion Form</title>
+    </head>
+    <body>
+      <form action="send.php" method="get">
+
+        <table width="100%" cellpadding="19">
+            <tr>
+                <td colspan="3" align="center"><b>Resistetion Form</b></td>
+                
+            </tr>
+
+            <tr>
+                <td align="right">Frist Name</td>
+                <td align="left"><input type="text" name="fname" maxlength="10"/></td>
+            </tr>
+
+            <tr>
+                <td align="right">Last Name</td>
+                <td align="left"><input type="text" name="lname" maxlength="10"/></td>
+            </tr>
+
+            <tr>
+                <td align="right">Age</td>
+                <td align="left">
+                    <select name="age">
+                        <option value="0/18">ander 18</option>
+                        <option value="18/45">18 to 45</option>
+                        <option value="45/--">45 up</option>
+                    </select>
+                </td>
+            </tr>
+`
+            <tr>
+                <td align="right">Hobby</td>
+                <td align="left">
+                    <input type="checkbox" name="songs" value="songs"/>Songs
+                    <input type="checkbox" name="games" value="games"/>Games
+                    <input type="checkbox" name="books" value="books"/>Books
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Gendar</td>
+                <td align="left">
+                    
+                    <input type="radio" name="gender" value="men"/>Men
+                    <input type="radio" name="gender" value="women"/>Women
+                    <input type="radio" name="gender" value="thred"/>Thead
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Address </td>
+                <td align="left">
+                    <textarea name="address" cols="30" rows="4"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td align="left">
+                    <input type="submit" name="submit" value="Submit" />
+                    <input type="reset" name="reset" value="Reset" />
+                </td>
+            </tr>
+        </table>
+      </form>
+
+    </body>
+</html>
