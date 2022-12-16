@@ -6,16 +6,21 @@ public class Find_direction{
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter a Input : ");
-        int num=0,i=0,sum=0,div=0 ;
-        while(i==0){
-            num=sc.nextInt();
-            sum=sum+num;
-            if(num==0){
+        int sum=0,div=0 ;
+        while(true){
+            div=sc.nextInt();
+            if(div==1 || div==-1){
+                sum +=div;
+            }
+            else if(div==0){
                 break;
             }
+            else{
+                continue;
+            }
         }
-        div=num%4;
-        switch(div){
+        
+        switch(sum%4){
             case 0:                                        
                 System.out.println("East");
                 break;

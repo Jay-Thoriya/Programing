@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch defalt_method",
+      "request": "launch",
+      "mainClass": "defalt_method",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
       "name": "Launch flow_serires",
       "request": "launch",
       "mainClass": "flow_serires",
