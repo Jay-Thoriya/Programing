@@ -1,4 +1,4 @@
-package classWork;
+
 import java.util.*;
 
 public class Chalk_day {

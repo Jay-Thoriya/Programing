@@ -1,6 +1,9 @@
-import p1.*;
-import p2.*;
+
+
 import java.util.Scanner;
+
+import classWork.p1.Address;
+import classWork.p2.Employee;
 
 public class JayMain {
     public static void main(String[] args) {
