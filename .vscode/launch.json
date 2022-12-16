@@ -3,6 +3,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch flow_serires",
+      "request": "launch",
+      "mainClass": "flow_serires",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch find_ugly_number",
+      "request": "launch",
+      "mainClass": "find_ugly_number",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Chalk_day",
+      "request": "launch",
+      "mainClass": "classWork.Chalk_day",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
+      "name": "Launch Inteface",
+      "request": "launch",
+      "mainClass": "Inteface",
+      "projectName": "programming_f804e314"
+    },
+    {
+      "type": "java",
       "name": "Launch Abstract_class",
       "request": "launch",
       "mainClass": "Abstract_class",
