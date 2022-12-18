@@ -1,0 +1,8 @@
+.container{
+    height: 100vh;
+    background: url("./kitten.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid blue;
+    background-attachment:fixed;
+}
