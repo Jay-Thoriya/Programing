@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    border: 3px solid red;
+    background-color:cadetblue;
+    color:black;
+    /* max-width: 70%; */
+    /* min-height: 20%; */
+    font-size: 30px;
+
+
+}
+
+.box{
+    border: 3px solid green;
+    background-color: burlywood;
+    margin: 50px;
+    position: static;
+    top: 40px;
+    position: relative;
+    left: 20px;
+    position: sticky;
+}
