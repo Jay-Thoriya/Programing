@@ -1,6 +1,7 @@
     
 def show(normal,normal1,*args,**kwargs):
     print(type(args))
+    print(type(kwargs))
     print(normal)
     for item in args:
         print(item)
