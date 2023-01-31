@@ -1,18 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            border: 2px solid black;
+            background-color: grey;
+            border-radius: 50px;
+            text-shadow: 2px 1px white;
+            padding: 20px;
+            margin-left: 45%;
+            margin-top: 20px;
+        }
+
+        ul {
+            display: flex;
+            background: -webkit-linear-gradient(top left, pink, red, yellow, blue, green);
+            padding: 20px 0;
+            font-size: 20px;
+            color: white;
+            font-style: italic;
+
+        }
+
+        li {
+            list-style: none;
+            margin: 0 90px;
+        }
+
+        .chang {
+            background-color: aqua;
+            color: chartreuse;
+        }
+
+        .shadow {
+            background-image: url(doge.png);
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script type="text/javascript">
+
+        // let a = setTimeout(function() {
+        //     alert(" I am inside of settimeout")
+        // },4000)
+
+        // let b = confirm(" do you want to saw alert box ? ")
+
+        // if(b == false){ clearTimeout(a)}
+
+        // let a = setInterval(function() {
+        //     alert(" I am inside of setInterval")
+        //     let b = confirm(" do you stop sawing box  ? ")
+        //     if(b == true){ clearInterval(a)}
+        // },4000)
+
+
+        // clearTimeout(a)
+        // let ab = document.getElementsByTagName('div')[0];
+        //   let div = document.createElement('div');
+        //   div.innerHTML = '<h1> hellow world</h1>';
+        //   ab.prepend(div);
+        //   const changbgred = ()=>{
+        //     document.body.firstElementChild.firstElementChild.style.background = "red"
+        //   }
+
+        //   let b =document.body
+
+        // let a = document.getElementsByClassName("container")[0];
+        // a.onclick = ()=>{
+        //     let b = document.getElementsByClassName("container")[0]
+        //     b.innerHTML = "hello"
+        // }
+
+        let x = function () {
+            alert("hello 1")
+        }
+
+        let y = function () {
+            alert("hello 2")
+        }
+
+        document.getElementById("btn").addEventListener('click', x)
+        document.getElementById("btn").addEventListener('click', y)
+
+        let a = prompt(" enter 1 ya 2 ")
+        if (a == "2") {
+            document.getElementById("btn").removeEventListener('click', x)
+        }
+
+    </script>
 </head>
+
 <body>
-    <h1>my brother</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit voluptatibus ullam deserunt tempore error !
-    </p>
-    <P>hello my brother ! i love my brother</P>
-    <b>bold</b>
-    <i>italic</i>
-    <u>underline</u>
+    <!-- I am start of this contaner (outer)
+    <div class="contaner">
+        I am start of this contaner (inner)
+        <div id="first">
+            I am first element
+        </div>
+        I am start of this contaner (inner)
+    </div>
+    I am end of this contaner (outer) -->
+    <nav class="navigation">
+        <ul class="uline">
+            <li id="li1">home</li>
+            <li id="li2">about</li>
+            <li id="li3">contact me</li>
+            <li>login</li>
+            <li>profial</li>
+        </ul>
+    </nav>
+    <!-- onclick="console.log('don\'t click me')"  onmouseenter="console.log('conainer ke ander mouse gaya')" -->
+    <div id="btn" class="container"><button>click me</button></div>
+    <h1 id="first" data-name="jay" data-roll="005">my brother</h1>
+    <p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa impedit voluptatibus ullam deserunt
+        tempore error !
+    </p>0
+
+    <P id="love" class="hello">hello my brother ! i love my brother</P>
+    <b class="bold">bold</b>
+    <i class="italic">italic</i>
+    <u class="underline">underline</u>
+
+    <script type="text/javascript">
+
+        // let a = setTimeout(function() {
+        //     alert(" I am inside of settimeout")
+        // },4000)
+
+        // let b = confirm(" do you want to saw alert box ? ")
+
+        // if(b == false){ clearTimeout(a)}
+
+        // let a = setInterval(function() {
+        //     alert(" I am inside of setInterval")
+        //     let b = confirm(" do you stop sawing box  ? ")
+        //     if(b == true){ clearInterval(a)}
+        // },4000)
+
+
+        // clearTimeout(a)
+        // let ab = document.getElementsByTagName('div')[0];
+        //   let div = document.createElement('div');
+        //   div.innerHTML = '<h1> hellow world</h1>';
+        //   ab.prepend(div);
+        //   const changbgred = ()=>{
+        //     document.body.firstElementChild.firstElementChild.style.background = "red"
+        //   }
+
+        //   let b =document.body
+
+        // let a = document.getElementsByClassName("container")[0];
+        // a.onclick = ()=>{
+        //     let b = document.getElementsByClassName("container")[0]
+        //     b.innerHTML = "hello"
+        // }
+
+        // let x = function () {
+        //     alert("hello 1")
+        // }
+
+        // let y = function () {
+        //     alert("hello 2")
+        // }
+
+        // document.getElementById("btn").addEventListener('click', x)
+        // document.getElementById("btn").addEventListener('click', y)
+
+        // let a = prompt(" enter 1 ya 2 ")
+        // if (a == "2") {
+        //     document.getElementById("btn").removeEventListener('click', x)
+        // }
+
+    </script>
 </body>
+
 </html>

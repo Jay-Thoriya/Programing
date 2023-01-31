@@ -1,0 +1,88 @@
+.main{
+    display: grid;
+    /* grid-template-columns: 230px 450px 233px; */
+    /* grid-template-rows: 230px 450px 233px; */
+    background-image: linear-gradient(to top left, red,orange,yellow,green,blue,indigo,violet);
+    color: aliceblue;
+    border: 3px solid blue;
+    justify-content: center;
+    /* align-items: center; */
+    grid-row: 3/6;
+    height: 575px;
+    transition: all 3s ease-in-out 3s;
+}
+
+.perent{
+    width: 189px;
+    background-color: rgb(4, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-size-adjust: 30px;
+    color: rgb(201, 201, 233);
+    text-shadow: 4px 1px 3px red;
+    margin: 20px;
+    grid-column: 2/5;
+    animation-name: W-HAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s ;
+    animation-iteration-count:infinite;
+    animation-direction: alternate; 
+}
+
+
+.perent :hover{
+    background-color: coral;
+    color: firebrick;
+    border: 4px double blue;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(17, 8, 8);
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    /* transform: skew(22); */
+    /* transform:scale(1); */
+    /* transform: translateX(20px) inherit; */
+}
+
+.main:hover{
+    background-image: linear-gradient(to bottom right, red,orange,yellow,green,blue,indigo,violet);
+    border: 8px double darkgoldenrod;
+    border-radius: 30px;
+
+
+}
+
+@media only screen and (max-width:800px){
+    .child{
+        border: 7px double red;
+        border-radius: 12px;
+        background-color: rgb(213, 235, 23);
+        color: rgb(45, 23, 240);
+    }
+   
+}
+
+@media only screen and (max-width:500px){
+    .child{
+        border: 5px dotted rgb(47, 10, 236);
+        border-radius: 8px;
+        background-color: aqua;
+        color: rgb(245, 80, 9);
+    }
+}
+
+@keyframes W-HAnimation {
+    form{
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    to{
+        width: 100px;
+        width: 100px;
+        border-radius: 20px;
+    }
+    
+}

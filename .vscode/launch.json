@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch multiTHreding",
+      "request": "launch",
+      "mainClass": "multiTHreding",
+      "projectName": "programming_e6d73986"
+    },
+    {
+      "type": "java",
       "name": "Launch defalt_method",
       "request": "launch",
       "mainClass": "defalt_method",

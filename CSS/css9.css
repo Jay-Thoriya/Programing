@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+span{
+    color: red;
+}
+.logo{
+    position:absolute;
+    padding-left: 35px;
+    margin: 13px;
+    color: yellow;
+    font-size: 23px;
+    font-style:italic;
+}
+
+li{
+    display: inline;
+    list-style: none;
+    padding: 90px;
+    color: white;
+
+}
+ul{
+    
+    padding: 18px;
+}
+
+header{
+    background-color: black;
+    color: aliceblue;
+    width: 100vw;
+    height: 8vh;
+    text-align:end;
+    
+}
+
+img{
+    width: 100%;
+    background-size: cover;
+    /* background-size: 50%; */
+    /* overflow:hidden; */
+}
+
+.cantaint{
+    display: inline;
+    
+}
+
+.text{
+    background-color:lightblue;
+    text-align: center;
+    z-index: -1;
+}
