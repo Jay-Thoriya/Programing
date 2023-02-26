@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:none;
+    overflow: hidden;
+}
+
+body{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+
+.player,
+.object{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+}
+
+#obj1{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+
+#obj2{
+    top:100%;
+    left:100%;
+    transform: translate(-100%,-100%);
+    z-index: -1;
+}
+#obj3{
+    top:100%;
+    left:0%;
+    transform: translate(0,-100%);
+    z-index: -1;
+}
+#obj4{
+    top:0%;
+    left:100%;
+    transform: translate(-100%,0);
+    z-index: -1;
+}
+#obj5{
+    transform: translate(0%,0%);
+    z-index: -1;
+}
+
+.c0{background-color: yellow;}
+.c1{background-color: red ;}
+.c2{background-color:aqua;}
+.c3{background-color:chartreuse;}
+.c4{background-color: magenta;}
+.c5{background-color:rgb(10, 10, 244);}

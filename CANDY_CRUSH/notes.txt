@@ -1,0 +1,9 @@
+1. score Board on top
+2. Gma Board : sixe 9X9
+3. Candies to come in randomly 5 - 6
+4. add functionality to sawp Candies: left right top bottom
+5. after sawp : scan to Board to check if we have 3 or more Candies in row/column
+6. If we do have 3 or more Candies:
+    1. remove them
+    2.add new random Candies
+    3. increment the score Board

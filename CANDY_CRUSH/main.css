@@ -1,0 +1,31 @@
+
+#game-board{
+    /* width: 900px;
+    height: 900px; */
+    width: 693px;
+    height: 540px;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    border: 1px solid rgb(0, 0, 0);
+    /* width: 98.6px;
+    height: 98px; */
+    width: 75.6px;
+    height: 58px;
+}
+
+.score-board{
+    text-align: center;
+    font-size: 36px;
+}
+
+.c0{background-color: yellow;}
+.c1{background-color: red ;}
+.c2{background-color:aqua;}
+.c3{background-color:chartreuse;}
+.c4{background-color: magenta;}
+.c5{background-color:rgb(10, 10, 244);}
