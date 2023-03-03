@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="searchValue">
+        <button onclick="search()">Search</button>
+    </div>
+    <script>
+        let search= async()=>{
+            let searchValue =  document.getElementById('searchValue')
+
+            let req1 =await fetch(`https://spotify23.p.rapidapi.com/search/?q=${searchValue}`,{
+                method:"GET",
+                headers:{
+                    'X-RapidAPI-Key':'be88ealcf8msh70d26e62270510dp14610bjsn2014ca5670da',
+                    'X-RapidAPI-Host':'spotify23.p.rapidapi.com'
+                }
+            }) 
+            let response = await req1.json();
+            console.log(response);
+        }
+
+    </script>
+</body>
+</html>
