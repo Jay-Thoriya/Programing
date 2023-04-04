@@ -16,13 +16,24 @@
 }
 .card{
   width: 18rem;
-  height: 25rem;
+  height: 23rem;
   background-color: rgba(255, 234, 234, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.8);
   padding: 20px;
   font-size: 30px;
   text-align: center;
   margin-left: 70px;
+}
+
+.card-body a{
+  background-color: #0b0b0b;
+  border: 2px solid white;
+  font-size: large;
+}
+
+.card:hover{
+  box-shadow: 0px 30px 18px -8px black;
+  transform: scale(1.05,1.05);
 }
 
 .card-container{
