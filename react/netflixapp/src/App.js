@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import Card from "./cards"
+import "./index.css";
+import sdata from './sdata';
+import Toggle from './toggle';
+import Search from './search';
 import './App.css';
+import { useState } from "react";
 
 function App() {
+  const [series , setseries ] = useState(sdata);
+   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='cards'>List Of Top Best Netflix Series 2022
+      <Search setseries={setseries} />
+      <Toggle  />
     </div>
+    <div className="card-container">
+      {series.map((value, index) => <Card key={value.id}  {...value} />
+      )}
+
+    </div>
+  </>
   );
 }
 
