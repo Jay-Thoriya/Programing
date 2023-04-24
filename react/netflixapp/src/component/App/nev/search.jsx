@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import sdata from "./sdata";
+import sdata from "../card/sdata";
 
 
 function Search({ setseries }) {
-    const [search , setsearch] = useState("");
+    const [search, setsearch] = useState("");
 
-    useEffect(()=>{
+    useEffect(() => {
         const result = sdata.filter(title => title.sname.toLowerCase().includes(search))
         // console.log(result)
         setseries(result)
-    },[search, setseries])
+    }, [search, setseries])
     return (
         <div className="searchBox">
             <input type="text" placeholder="Search....." id="textBox" onChange={e => {
@@ -20,3 +20,4 @@ function Search({ setseries }) {
 }
 
 export default Search;
+

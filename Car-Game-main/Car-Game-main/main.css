@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+.cargame{
+    width:100vw;
+    height: 100vh;
+    background-image: url('Images/back-3.avif');
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+.car , .enamy{
+    width: 50px;
+    height: 80px;
+    border-radius: 11px;
+    position: absolute;
+    left: 50px;
+    bottom: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 230% 100%
+}
+.enamy{
+    background-image: url('Images/enamy_car/icons8-car-top-view-100.png');
+    background-color: black;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: 170% 110%
+}
+
+.car{
+    background-image: url('Images/car-5.jpeg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 230% 100%
+}
+
+.Scores  {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background: rgb(47, 161, 255);
+    width: 300px;
+    /* height: 70px; */
+    line-height: 70px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5em;
+    box-shadow: 0 5px 5px #777;
+}
+#high{
+    position: absolute;
+    top: 15px;
+    left: 985px;
+    background: rgb(246, 31, 135);
+    width: 300px;
+    /* height: 70px; */
+    line-height: 70px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5em;
+    box-shadow: 0 5px 5px #777;
+}
+
+.GameArea{
+    width: 400px;
+    height: 100vh;
+    background-color: #353b48;  
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+}
+
+.lines{
+    width: 10px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    margin-left: 195px;
+}
+
+.StartScreen{
+    position: absolute;
+    background-color: rgb(255, 69, 69);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding: auto;
+    width: 50%;
+    cursor: pointer;
+    letter-spacing: 5;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+}

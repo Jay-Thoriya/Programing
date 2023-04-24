@@ -1,3 +1,4 @@
+import Socialmedia from "./socialmedia/media";
 
 function Card(props) {
     return (
@@ -8,6 +9,9 @@ function Card(props) {
                     <h5 className="card-title"> A Netflix Orignal Series </h5>
                     <p className="card-text">{props.sname}</p>
                     <a href={props.link} className="btn btn-primary" target='_blank' rel="noreferrer" >Watch Now </a>
+                    <div className="card-info">
+                        <Socialmedia />
+                    </div>
                 </div>
             </div>
 
