@@ -1,17 +1,17 @@
 import Like from "./Likes";
-import Savemovie from "./SaveMovie";
+import SaveMovie from "./SaveMovie";
 import Share from "./share";
 
 
 
-function Socialmedia(props) {
+function SocialMedia(props) {
     return (
         <>
             <Like />
-            <Savemovie id={props.id} />
+            <SaveMovie id={props.id} />
             <Share />
         </>
     );
 }
 
-export default Socialmedia;
+export default SocialMedia;

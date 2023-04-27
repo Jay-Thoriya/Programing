@@ -12,10 +12,10 @@ ReactDOM.render(
 );
 
 // {/* <Card
-//         imgsrc = { sdata[0].imgsrc }
-//         sname = {sdata[0].sname}
-//         link = {sdata[0].link}
+//         SeriesImgSRC = { SeriesData[0].SeriesImgSRC }
+//         SeriesName = {SeriesData[0].SeriesName}
+//         link = {SeriesData[0].link}
 //     /> */}
-//       {/* {sdata.map(array) => 
-//     <car imgsrc='array.imagsrc' sname='array.sname' link='array.link'  />
+//       {/* {SeriesData.map(array) => 
+//     <car SeriesImgSRC='array.imagsrc' SeriesName='array.SeriesName' link='array.link'  />
 //      */}

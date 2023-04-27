@@ -1,38 +1,39 @@
 import Card from "./card/cards"
 import "../../index.css";
-import sdata from './card/sdata';
+import SeriesData from './card/SeriesData';
 import Toggle from './nev/toggle';
 import Search from './nev/search';
 import './App.css';
 import { createContext, useState } from "react";
-import Curesorevent from "./CursorEvent";
+import CursorEvent from "./CursorEvent";
 import Playlist from "./nev/Playlist";
 
-const SdataId = createContext();
+const SeriesDataId = createContext();
 function App() {
-  const [dataId , setDataId] = useState([]);
-  const [series, setseries] = useState(sdata);
-  const disk = {dataId:dataId,setDataId:setDataId};
+  const [PlaylistSeriesIds, setPlaylistSeriesIds] = useState([]);
+  const [series, setSeries] = useState(SeriesData);
+  const disk = { PlaylistSeriesIds: PlaylistSeriesIds, setPlaylistSeriesIds: setPlaylistSeriesIds };
 
-  console.log({dataId});
+
+  console.log({ PlaylistSeriesIds });
   return (
 
-    <Curesorevent >
+    <CursorEvent >
 
       <div className='cards'>List Of Top Best Netflix Series 2022
-        <Search setseries={setseries} />
+        <Search setSeries={setSeries} />
         <Toggle />
       </div>
-        <Playlist id={sdata.id}/> 
-      <SdataId.Provider value={disk}>
-      <div className="card-container">
-        {series.map((value, index) => <Card key={value.id}  {...value} />
-        )}
-      </div>
-      </SdataId.Provider> 
-    </Curesorevent>
+      <Playlist id={PlaylistSeriesIds.id} />
+      <SeriesDataId.Provider value={disk}>
+        <div className="card-container">
+          {series.map((value, index) => <Card key={value.id}  {...value} />
+          )}
+        </div>
+      </SeriesDataId.Provider>
+    </CursorEvent>
   );
 }
 
 export default App;
-export { SdataId };
+export { SeriesDataId };

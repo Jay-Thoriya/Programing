@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Curesorevent({ children }) {
+function CursorEvent({ children }) {
     const [Position, setPosition] = useState({ x: 0, y: 0 })
 
 
@@ -31,8 +31,8 @@ function Curesorevent({ children }) {
                     //console.log(window.scrollY)
                 }}> {children}
                 <div className="circle" style={{
-                    top : Position.y - 15 ,
-                    left : Position.x - 15 ,
+                    top: Position.y - 15,
+                    left: Position.x - 15,
                 }} />
             </div>
         </>
@@ -40,4 +40,4 @@ function Curesorevent({ children }) {
     );
 }
 
-export default Curesorevent;
+export default CursorEvent;

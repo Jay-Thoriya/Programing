@@ -1,16 +1,16 @@
-import Socialmedia from "./socialmedia/media";
+import SocialMedia from "./socialMedia/media";
 
 function Card(props) {
     return (
         <>
             <div className="card ">
-                <img src={props.imgsrc} className="card-img-top" alt="img" />
+                <img src={props.SeriesImgSRC} className="card-img-top" alt="img" />
                 <div className="card-body">
-                    <h5 className="card-title"> A Netflix Orignal Series </h5>
-                    <p className="card-text">{props.sname}</p>
+                    <h5 className="card-title"> A Netflix Original Series </h5>
+                    <p className="card-text">{props.SeriesName}</p>
                     <a href={props.link} className="btn btn-primary" target='_blank' rel="noreferrer" >Watch Now </a>
                     <div className="card-info">
-                        <Socialmedia id={props.id} />
+                        <SocialMedia id={props.id} />
                     </div>
                 </div>
             </div>

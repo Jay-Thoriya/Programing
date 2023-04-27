@@ -1,24 +1,31 @@
 import { useContext, useState } from "react";
-import { SdataId } from "../../App";
+import { SeriesDataId } from "../../App";
 
-function Savemovie(props){
-    const [check , setcheck] = useState(false);
-    const disk = useContext(SdataId);
-    function chackhandler(){
-        
-        setcheck(check === false ? true : false);
-        console.log("data id : ",disk)
-        if(check === true){ disk.setDataId(if( dataId.map() != props.id ){ [...disk.dataId , props.id ] })}
+function SaveMovie(props) {
+    const disk = useContext(SeriesDataId);
+    const [active, setActive] = useState(false);
+
     
+    
+    
+    function AddSeriesInPlaylist() {
+        setActive(!active);
+        const isIdInPlaylistSeries = Boolean(disk.PlaylistSeriesIds.find(ele => ele === props.id))
+        if (isIdInPlaylistSeries) {
+
+        }
+        else {
+            disk.setPlaylistSeriesIds([...disk.PlaylistSeriesIds, props.id]);
+        }
+
+        // console.log(" Data id ", disk.PlaylistSeriesIds);
     }
-    console.log(check);
-    return(
-        <>
-        <button onClick={chackhandler}>
-            <img src="queue.png" className="savemovieImg" alt="savemovie_img"/>
+
+    return (
+        <button onClick={AddSeriesInPlaylist} style={{ border: active ? " 2px solid red" : "2px solid transparent"}} className={"PlaylistSeriesButton"}>
+            <img src="queue.png" className="saveMovieImg" alt="saveMovie_img" />
         </button>
-        </>
     );
-    }
-    
-    export default Savemovie;
+}
+
+export default SaveMovie;
