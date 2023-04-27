@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { SdataId } from "../../App";
 
-function Savemovie(){
+function Savemovie(props){
     const [check , setcheck] = useState(false);
-    function chackhandler(e){
+    const disk = useContext(SdataId);
+    function chackhandler(){
         
         setcheck(check === false ? true : false);
+        console.log("data id : ",disk)
+        if(check === true){ disk.setDataId(if( dataId.map() != props.id ){ [...disk.dataId , props.id ] })}
+    
     }
-    console.log(check );
+    console.log(check);
     return(
         <>
         <button onClick={chackhandler}>

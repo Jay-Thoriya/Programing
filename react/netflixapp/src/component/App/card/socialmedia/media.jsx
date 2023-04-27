@@ -4,11 +4,11 @@ import Share from "./share";
 
 
 
-function Socialmedia() {
+function Socialmedia(props) {
     return (
         <>
             <Like />
-            <Savemovie />
+            <Savemovie id={props.id} />
             <Share />
         </>
     );

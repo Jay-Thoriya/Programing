@@ -10,7 +10,7 @@ function Card(props) {
                     <p className="card-text">{props.sname}</p>
                     <a href={props.link} className="btn btn-primary" target='_blank' rel="noreferrer" >Watch Now </a>
                     <div className="card-info">
-                        <Socialmedia />
+                        <Socialmedia id={props.id} />
                     </div>
                 </div>
             </div>
