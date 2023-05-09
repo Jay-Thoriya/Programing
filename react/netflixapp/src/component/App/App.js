@@ -15,26 +15,25 @@ function App() {
   const [series, setSeries] = useState(SeriesData);
   const disk = { PlaylistSeriesIds: PlaylistSeriesIds, setPlaylistSeriesIds: setPlaylistSeriesIds };
   const [isPLaylist , setISPlaylist] = useState(series);
-
+    
  // console.log(" playlist array", PlaylistSeriesIds );
- console.log(" rendering this component",{PlaylistSeriesIds, series, isPLaylist});
-
-
 
   return (
     <CursorEvent >
       <div className='cards'>List Of Top Best Netflix Series 2022
-        <Search setSeries={setSeries} />
+        <Search setSeries={setSeries} setISPlaylist={setISPlaylist} />
         <Toggle />
+        <Api/>
       </div>
       <Playlist setISPlaylist={setISPlaylist} PlaylistSeriesIds={PlaylistSeriesIds} />
       <SeriesDataId.Provider value={disk}>
+      
         <div className="card-container">
           {isPLaylist.map((value, index) => <Card key={value.id}  {...value} />
           )}
         </div>
       </SeriesDataId.Provider>
-    </CursorEvent>
+    </CursorEvent> 
   );
 }
 

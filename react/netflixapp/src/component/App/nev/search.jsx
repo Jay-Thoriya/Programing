@@ -2,14 +2,19 @@ import { useEffect, useState } from "react";
 import SeriesData from "../card/SeriesData";
 
 
-function Search({ setSeries }) {
+function Search({ setSeries , setISPlaylist }) {
     const [search, setSearch] = useState("");
+    const [seriesActive , setSeriesActive] = useState(false);
 
     useEffect(() => {
+        if(seriesActive){
+            const result = SeriesData.filter(title => title.SeriesName.toLowerCase().includes(search))
+            setSeries(result);
+            setISPlaylist(result);
+        }
         
-        const result = SeriesData.filter(title => title.SeriesName.toLowerCase().includes(search))
-        console.log("search change ")
-        setSeries(result)
+        setSeriesActive(true)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [search, setSeries])
     return (
         <div className="searchBox">
