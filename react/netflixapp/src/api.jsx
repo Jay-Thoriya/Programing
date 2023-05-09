@@ -23,7 +23,7 @@ function Api() {
 
     return(
         <>
-            <h2> API IS CALL </h2>
+            
         </>
     )
 }
