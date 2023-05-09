@@ -2,12 +2,9 @@ import { useContext, useState } from "react";
 import { SeriesDataId } from "../../App";
 
 function SaveMovie(props) {
-    const disk = useContext(SeriesDataId);
+    const disk = useContext(SeriesDataId);                                      
     const [active, setActive] = useState(false);
 
-    
-    
-    
     function AddSeriesInPlaylist() {
         setActive(!active);
         const isIdInPlaylistSeries = Boolean(disk.PlaylistSeriesIds.find(ele => ele === props.id))
