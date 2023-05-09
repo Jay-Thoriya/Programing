@@ -1,21 +1,31 @@
-function api() {
-    const axios = require("axios");
 
-    const options = {
-        method: 'GET',
-        url: 'https://unogsng.p.rapidapi.com/genres',
-        headers: {
-            'X-RapidAPI-Key': '084ebfad86mshbabd5a096e6ec45p105f77jsn2d9aa673a4c8',
-            'X-RapidAPI-Host': 'unogsng.p.rapidapi.com'
+import { useEffect } from "react";
+
+function Api() {
+    
+    let API = "http://www.omdbapi.com/?i=tt3896198&apikey=e0f4e19e";
+    
+    const fetchAPIData = async (url) =>{
+        try{
+            const result = await fetch(url);
+            const data = result.json();
+            console.log(data);
         }
-    };
+        catch(error){
+            console.log(error);
+        }
+    }
 
-    axios.request(options).then(function (response) {
-        console.log(response.data);
-    }).catch(function (error) {
-        console.error(error);
-    });
+    useEffect(()=>{
+        fetchAPIData(API);
+    },  );
+
+
+    return(
+        <>
+            <h2> API IS CALL </h2>
+        </>
+    )
 }
 
-
-export default api;
+export default Api;
