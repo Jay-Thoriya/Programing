@@ -1,15 +1,15 @@
 import Like from "./Likes";
 import SaveMovie from "./SaveMovie";
-import Share from "./share";
+import Ratting from "./Ratting";
 
 
 
 function SocialMedia(props) {
     return (
         <>
-            <Like />
+            <Like like={props.like} />
             <SaveMovie id={props.id} />
-            <Share />
+            <Ratting rating={props.rating} />
         </>
     );
 }
