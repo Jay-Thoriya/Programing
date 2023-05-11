@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 struct Node{
- int data;
+ int moviesData;
  struct Node * prev;
  struct Node * next;
 
@@ -14,18 +14,18 @@ void doubly_travsel(struct Node * frist){
   
 printf("front travsel in dobly linked list \n");
   while(ptr->next != NULL){
-    printf("Element is : %d \n",ptr->data);
+    printf("Element is : %d \n",ptr->moviesData);
     ptr=ptr->next;
   }
-    printf("Element is : %d \n",ptr->data);
+    printf("Element is : %d \n",ptr->moviesData);
   
 printf("reverse travsel in dobly linked list \n");
 
 while(ptr->prev != NULL){
-    printf("Element is : %d \n",ptr->data);
+    printf("Element is : %d \n",ptr->moviesData);
     ptr=ptr->prev;
   }
-    printf("Element is : %d \n",ptr->data);
+    printf("Element is : %d \n",ptr->moviesData);
   
 }
 
@@ -42,19 +42,19 @@ int main(){
 
  frist->next =second;
  frist->prev = NULL;
- frist->data =9;
+ frist->moviesData =9;
 
  second->next = thord;
  second->prev = frist;
- second->data = 6;
+ second->moviesData = 6;
 
  thord->next = forth;
  thord->prev = second;
- thord->data = 3;
+ thord->moviesData = 3;
 
  forth->next = NULL;
  forth->prev = thord;
- forth->data = 8;
+ forth->moviesData = 8;
  
  doubly_travsel(frist);
  return 0;

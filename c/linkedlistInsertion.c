@@ -3,7 +3,7 @@
 
 struct Node
 {
-    int data;
+    int moviesData;
     struct Node *next;
 };
 
@@ -11,7 +11,7 @@ void linkedListtraveser(struct Node *ptr)
 {
     while (ptr != NULL)
     {
-        printf("element is : %d \n", ptr->data);
+        printf("element is : %d \n", ptr->moviesData);
         ptr = ptr->next;
     }
 }
@@ -19,15 +19,15 @@ void linkedListtraveser(struct Node *ptr)
 
 
 // case 1
-struct Node * linkedinsetionFrist(struct Node *frist,int data){
+struct Node * linkedinsetionFrist(struct Node *frist,int moviesData){
     struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
-    ptr->data = data;
+    ptr->moviesData = moviesData;
     ptr->next = frist;
     return ptr;
 }
 
 //case 2
-struct Node * linkedinsetioIndex(struct Node * frist , int data,int index){
+struct Node * linkedinsetioIndex(struct Node * frist , int moviesData,int index){
     struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
     struct Node * p = frist;
     int i=0;
@@ -36,17 +36,17 @@ struct Node * linkedinsetioIndex(struct Node * frist , int data,int index){
        p = p->next;
        p++;
     }
-    ptr->data=data;     
+    ptr->moviesData=moviesData;     
     ptr->next = p->next ;
     p->next=ptr;
     return frist; 
     
 }
 
-struct Node * linkedinsetioend(struct Node * frist , int data){
+struct Node * linkedinsetioend(struct Node * frist , int moviesData){
     struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
     struct Node * p = frist;
-    ptr->data=data;
+    ptr->moviesData=moviesData;
     while (p->next!=NULL)
     {
         p=p->next;
@@ -59,10 +59,10 @@ struct Node * linkedinsetioend(struct Node * frist , int data){
 
 // case 4
 
-struct Node * linkedinsetioafternode(struct Node * frist , struct Node * prevNode , int data){
+struct Node * linkedinsetioafternode(struct Node * frist , struct Node * prevNode , int moviesData){
     struct Node * ptr = (struct Node *) malloc(sizeof(struct Node));
    
-    ptr->data=data;
+    ptr->moviesData=moviesData;
     ptr->next=prevNode->next;
     prevNode->next=ptr;
     return frist;
@@ -83,19 +83,19 @@ int main()
     froth = (struct Node *)malloc(sizeof(struct Node));
 
     // link frist and second nodes
-    frist->data = 12;
+    frist->moviesData = 12;
     frist->next = second;
 
     // link second and thord nodes
-    second->data = 25;
+    second->moviesData = 25;
     second->next = thord;
 
     // link second and thord nodes
-    thord->data = 39;
+    thord->moviesData = 39;
     thord->next = froth;
     
     // link thord and forth nodes
-    froth->data = 50;
+    froth->moviesData = 50;
     froth->next = NULL;
 
     linkedListtraveser(frist);

@@ -2,15 +2,15 @@
 #include<malloc.h>
 
 struct node{
-    int data;
+    int moviesData;
     struct node * left;
     struct node * right;
 };
 
-struct node* creating(int data ){
+struct node* creating(int moviesData ){
    struct node * n;
    n = (struct node *)malloc(sizeof (struct node));
-   n->data=data;
+   n->moviesData=moviesData;
    n->left=NULL;
    n->right=NULL;
    return n;
@@ -20,7 +20,7 @@ struct node* creating(int data ){
 void Preoder(struct node * root){
  
     if(root != NULL){
-        printf(" %d ",root->data);
+        printf(" %d ",root->moviesData);
         Preoder(root->left);
         Preoder(root->right);
 
@@ -31,7 +31,7 @@ void poshoder(struct node* root){
     if(root != NULL){
         poshoder(root->left);
         poshoder(root->right);
-        printf("%d ",root->data);
+        printf("%d ",root->moviesData);
     }
 }
 

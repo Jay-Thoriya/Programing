@@ -1,8 +1,8 @@
 import json
 
-data = '{"var1":"jay","var2":23}'
+moviesData = '{"var1":"jay","var2":23}'
 
-presnt = json.loads(data)
+presnt = json.loads(moviesData)
 print(presnt['var1'])
 
 

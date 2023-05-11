@@ -3,7 +3,7 @@
 
 struct Node
 {
-    int data;
+    int moviesData;
     struct Node *next;
 };
 
@@ -12,7 +12,7 @@ void linkedListtraveser(struct Node *ptr)
     
     while (ptr != NULL)
     {
-        printf("element is : %d \n", ptr->data);
+        printf("element is : %d \n", ptr->moviesData);
         ptr = ptr->next;
     }
 }
@@ -22,7 +22,7 @@ void circulerlinkedlist(struct Node *frist)
     struct Node *ptr = frist;
     
     do{
-        printf("element is : %d", ptr->data);
+        printf("element is : %d", ptr->moviesData);
         ptr = ptr->next;
     }while (ptr != frist);
     
@@ -41,19 +41,19 @@ int main()
     froth = (struct Node *)malloc(sizeof(struct Node));
 
     // link frist and second nodes
-    frist->data = 12;
+    frist->moviesData = 12;
     frist->next = second;
 
     // link second and thord nodes
-    second->data = 25;
+    second->moviesData = 25;
     second->next = thord;
 
     // link second and thord nodes
-    thord->data = 39;
+    thord->moviesData = 39;
     thord->next = froth;
     
     // link thord and forth nodes
-    froth->data = 50;
+    froth->moviesData = 50;
     froth->next = NULL;
 
    // linkedListtraveser(frist);

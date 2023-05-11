@@ -2,15 +2,15 @@
 #include<malloc.h>
 
 struct node{
-    int data;
+    int moviesData;
     struct node * left;
     struct node * right;
 };
 
-struct node* creating(int data ){
+struct node* creating(int moviesData ){
    struct node * n;
    n = (struct node *)malloc(sizeof (struct node));
-   n->data=data;
+   n->moviesData=moviesData;
    n->left=NULL;
    n->right=NULL;
    return n;
@@ -20,10 +20,10 @@ struct node* search( struct node* root , int key){
     if(root == NULL){
         return NULL;
     }
-    if( key == root->data){
+    if( key == root->moviesData){
         return root;
     }
-    else if(key < root->data){
+    else if(key < root->moviesData){
         return search(root->left ,key);
     }
     else{
@@ -54,7 +54,7 @@ int main(){
  p2->right=p4;
 
  struct node * n = search(p,4);
- printf("found : %d ",n->data);
+ printf("found : %d ",n->moviesData);
 
     return 0;
 }

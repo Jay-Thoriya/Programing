@@ -1,29 +1,28 @@
-import { useEffect, useState } from "react";
-import SeriesData from "../card/SeriesData";
+import { useState } from "react";
 
 
-function Search({ setSeries , setISPlaylist }) {
+
+
+function Search({ setSeries, setISPlaylist, moviesData }) {
     const [search, setSearch] = useState("");
-    const [seriesActive , setSeriesActive] = useState(false);
 
-    useEffect(() => {
-        if(seriesActive){
-            const result = SeriesData.filter(title => title.SeriesName.toLowerCase().includes(search))
-            setSeries(result);
-            setISPlaylist(result);
-        }
-        
-        setSeriesActive(true)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [search, setSeries])
+    function inputSearch() {
+        const result = moviesData.filter(movieInfo =>
+            movieInfo.Title.toLowerCase().includes(search)
+        )
+        setSeries(result);
+        setISPlaylist(result);
+    }
+
     return (
         <div className="searchBox">
             <input type="text" placeholder="Search....." id="textBox" onChange={e => {
+                inputSearch()
                 setSearch(e.target.value)
             }}></input>
         </div>
     );
-}   
+}
 
 export default Search;
 

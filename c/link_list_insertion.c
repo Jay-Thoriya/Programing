@@ -3,7 +3,7 @@
 
 struct node
 {
-    int data;
+    int moviesData;
     struct node * next;
 };
 
@@ -12,7 +12,7 @@ void linkedListtraveser(struct node * ptr)
 {
     while (ptr != NULL)
     {
-        printf(" Element is : %d \n",ptr->data);
+        printf(" Element is : %d \n",ptr->moviesData);
         ptr = ptr->next;
     }
 }
@@ -20,16 +20,16 @@ void linkedListtraveser(struct node * ptr)
 // case : 1  ( at first )
 struct node * insertion_at_first(struct node * first,int val ){
  struct node * ptr =(struct node *)malloc(sizeof(struct node));
- ptr->data=val;
+ ptr->moviesData=val;
  ptr->next= first;
  return ptr;
 }
 
 // case : 2 ( at end )
-struct node * insertion_at_end(struct node * first , int data){
+struct node * insertion_at_end(struct node * first , int moviesData){
     struct node * ptr=(struct node *)malloc(sizeof(struct node));
     struct node * p=first;
-    ptr->data=data;
+    ptr->moviesData=moviesData;
     while(p->next != NULL){
         p=p->next;
     }
@@ -52,16 +52,16 @@ int main(){
     third=(struct node *)malloc(sizeof(struct node));
     fourth=(struct node *)malloc(sizeof(struct node));
     
-    first->data=7;
+    first->moviesData=7;
     first->next=second;
 
-    second->data=3;
+    second->moviesData=3;
     second->next=third;
 
-    third->data=6;
+    third->moviesData=6;
     third->next=fourth;
 
-    fourth->data=1;
+    fourth->moviesData=1;
     fourth->next=NULL;
 
     first = insertion_at_first(first,2);

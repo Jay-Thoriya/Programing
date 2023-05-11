@@ -3,7 +3,7 @@
 
 struct Node
 {
-    int data;
+    int moviesData;
     struct Node *next;
 };
 
@@ -11,7 +11,7 @@ void linkedListtraveser(struct Node *ptr)
 {
     while (ptr != NULL)
     {
-        printf("element is : %d \n", ptr->data);
+        printf("element is : %d \n", ptr->moviesData);
         ptr = ptr->next;
     }
 }
@@ -58,12 +58,12 @@ struct Node * detionatend(struct Node* frist){
 struct Node * deletionatpoint (struct Node* frist , int value ){
     struct Node * p = frist ;
     struct Node * q = frist->next;
-    while (q->data!=value && q->next!= NULL)
+    while (q->moviesData!=value && q->next!= NULL)
     {
         p=p->next;
         q=q->next;
     }
-    if(q->data == value){
+    if(q->moviesData == value){
         p->next = q->next;
         free(q);
     }
@@ -84,19 +84,19 @@ int main()
     froth = (struct Node *)malloc(sizeof(struct Node));
 
     // link frist and second nodes
-    frist->data = 12;
+    frist->moviesData = 12;
     frist->next = second;
 
     // link second and thord nodes
-    second->data = 25;
+    second->moviesData = 25;
     second->next = thord;
 
     // link second and thord nodes
-    thord->data = 39;
+    thord->moviesData = 39;
     thord->next = froth;
     
     // link thord and forth nodes
-    froth->data = 50;
+    froth->moviesData = 50;
     froth->next = NULL;
 
     printf("befor calling deletion : \n");

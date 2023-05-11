@@ -5,9 +5,9 @@ print(r.text)
 print(r.status_code)
 
 url = "www.something.com"
-data = { 
+moviesData = { 
     "p1":4,
     "p2":5
 } 
 
-r2 = requests.post(url=url,data=data)
+r2 = requests.post(url=url,moviesData=moviesData)

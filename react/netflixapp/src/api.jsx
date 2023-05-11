@@ -1,5 +1,6 @@
 
-import { useEffect } from "react";
+import { useEffect  } from "react";
+
 
 function Api() {
     
@@ -8,8 +9,8 @@ function Api() {
     const fetchAPIData = async (url) =>{
         try{
             const result = await fetch(url);
-            const data = result.json();
-            console.log(data);
+            const moviesData = await result.json();
+            
         }
         catch(error){
             console.log(error);

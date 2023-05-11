@@ -9,7 +9,7 @@ print(d1)
 del d1["ravi"]  #---> delete ravi
 print(d1)
 
-d2=d1  #----> not a copy give same data
+d2=d1  #----> not a copy give same moviesData
 print(d2)
 del d2["meet"] #---> delete meet it is delete from d2 also d1
 print(d2)

@@ -3,6 +3,7 @@ import { useState } from "react";
 import SeriesData from "../card/SeriesData";
 
 function Playlist({setISPlaylist , PlaylistSeriesIds}) {
+    
     const [ displayText , setDisplayText] = useState("");
     const [ CheckPlaylistIsOpen , setCheckPlaylistIsOpen] = useState(true)
 

@@ -4,6 +4,7 @@ import { SeriesDataId } from "../../App";
 function SaveMovie(props) {
     const disk = useContext(SeriesDataId);                                      
     const [active, setActive] = useState(false);
+    
 
     function AddSeriesInPlaylist() {
         setActive(!active);

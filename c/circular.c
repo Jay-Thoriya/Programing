@@ -4,14 +4,14 @@
 
 struct Node
 {
-    int data;
+    int moviesData;
     struct Node *next;
 };
 
 void linkedListTraversal(struct Node *head){
     struct Node *ptr = head;
     do{
-        printf("Element is %d\n", ptr->data);
+        printf("Element is %d\n", ptr->moviesData);
         ptr = ptr->next;
     }while(ptr!=head);
 }
@@ -30,19 +30,19 @@ int main(){
     fourth = (struct Node *)malloc(sizeof(struct Node));
  
     // Link first and second nodes
-    head->data = 4;
+    head->moviesData = 4;
     head->next = second;
  
     // Link second and third nodes
-    second->data = 3;
+    second->moviesData = 3;
     second->next = third;
  
     // Link third and fourth nodes
-    third->data = 6;
+    third->moviesData = 6;
     third->next = fourth;
  
     // Terminate the list at the third node
-    fourth->data = 1;
+    fourth->moviesData = 1;
     fourth->next = head;
  
     linkedListTraversal(head);

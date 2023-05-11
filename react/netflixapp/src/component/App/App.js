@@ -7,33 +7,36 @@ import './App.css';
 import { createContext, useState } from "react";
 import CursorEvent from "./CursorEvent";
 import Playlist from "./nev/Playlist";
-import Api from "../../Api";
+import { useApi } from "./card/SeriesData";
 
 const SeriesDataId = createContext();
 function App() {
   const [PlaylistSeriesIds, setPlaylistSeriesIds] = useState([]);
-  const [series, setSeries] = useState(SeriesData);
   const disk = { PlaylistSeriesIds: PlaylistSeriesIds, setPlaylistSeriesIds: setPlaylistSeriesIds };
-  const [isPLaylist , setISPlaylist] = useState(series);
-    
- // console.log(" playlist array", PlaylistSeriesIds );
+
+  const { moviesData } = useApi('movies');;
+  //console.log("moviesData" , moviesData);
+  
+  const [series, setSeries] = useState(moviesData);
+  const [isPLaylist, setISPlaylist] = useState(series);
 
   return (
     <CursorEvent >
       <div className='cards'>List Of Top Best Netflix Series 2022
-        <Search setSeries={setSeries} setISPlaylist={setISPlaylist} />
+        <Search setSeries={setSeries} setISPlaylist={setISPlaylist} moviesData={moviesData} />
         <Toggle />
-        <Api/>
+
       </div>
       <Playlist setISPlaylist={setISPlaylist} PlaylistSeriesIds={PlaylistSeriesIds} />
       <SeriesDataId.Provider value={disk}>
-      
         <div className="card-container">
-          {isPLaylist.map((value, index) => <Card key={value.id}  {...value} />
+          {moviesData.map((value, index) => <Card key={value.id}  {...value}
+          />
           )}
         </div>
+
       </SeriesDataId.Provider>
-    </CursorEvent> 
+    </CursorEvent>
   );
 }
 
