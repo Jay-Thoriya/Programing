@@ -1,22 +1,25 @@
 import { useState } from "react";
 
-function Like(){
-
-  let count = 0 ;
-  const [like , setlike] = useState(count);
-  function handlercount(){
-    setlike(count => count+1);
+function Like(props){
+  //console.log(props.like)
+  let count ;
+  
+  const [like , setLike] = useState(count);
+  function handlerEvent_Start(){
+    setLike(props.like);
   }
-    //<div class="alert alert-primary" role="alert">
-     // This is a primary alert—check it out!
-    //</div>
+
+  function HandlerEvent_end(){
+    setLike("");
+  }
+  
   return( 
       <>
-      <div className="likesgroup">
-      <h7>{like}</h7>
-      <button onClick={handlercount}>
+      <div className="likesGroup">
+      <button onMouseEnter={handlerEvent_Start}  onMouseLeave={HandlerEvent_end}>
           <img src="heart.png" className="likeImg" alt="like_img"/>
       </button>
+      <h7>{like}</h7>
       </div>
       </>
   );

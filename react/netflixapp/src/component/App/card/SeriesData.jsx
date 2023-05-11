@@ -1,31 +1,45 @@
-const SeriesData = [
+import { useEffect, useState  } from "react";
+//"https://imdb-api.com/en/API/Top250Movies/k_dhngf99h" api 250 info
 
-    {
-        SeriesName: 'DARK',
-        SeriesImgSRC: 'https://wallpapercave.com/dwp1x/wp5770334.jpg',
-        link: 'https://www.netflix.com/in/title/80100172',
-        id: 1,
-        check: false,
+
+function useApi(what) {
+    const [data , setData] = useState([]);
+    //console.log(data);
+    const [loading , setLoading] = useState(false);
+    const [error , setError] = useState(null);
+    
+        let API = "http://localhost:3000/"+ what;
+
+    const fetchAPIData = async (url) =>{
+        try{
+            const result = await fetch(url);
+            const data = await result.json();
+            setData(data);
+            
+            // eslint-disable-next-line array-callback-return
+            data.map((item) =>{
+            SeriesData.push(item);
+                
+        })
+        }catch(error){
+            setError(error);
+            console.log(error);
+        }
+        setLoading(true);
+        
     }
-    , {
-        SeriesImgSRC: 'https://wallpapercave.com/dwp1x/wp9882014.jpg',
-        SeriesName: 'Extracurricular',
-        link: 'https://www.netflix.com/in/title/80990668?source=35',
-        id: 2,
-        check: false,
-    }, {
-        SeriesImgSRC: 'https://wallpapercave.com/dwp1x/wp10339821.jpg',
-        SeriesName: 'Stranger Things',
-        link: 'https://www.netflix.com/in/title/80057281',
-        id: 3,
-        check: false,
-    }, {
-        SeriesImgSRC: 'https://wallpapercave.com/dwp1x/wp6126886.jpg',
-        SeriesName: 'Money Heist',
-        link: 'https://www.netflix.com/in/title/80192098',
-        id: 4,
-        check: false,
-    }
-];
+
+    useEffect(()=>{ 
+        setLoading(true);
+        fetchAPIData(API);
+    }, [API] );
+
+
+    return { data }
+
+}
+
+const SeriesData = [];
 
 export default SeriesData;
+export {useApi} ;
