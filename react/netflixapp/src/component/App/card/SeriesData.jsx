@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 //"https://imdb-api.com/en/API/Top250Movies/k_dhngf99h" api 250 info
 
 
-function useApi(what) {
+function useApi(what, setMovies) {
     const [moviesData, setData] = useState([]);
     //console.log(moviesData);
     const [loading, setLoading] = useState(false);
@@ -10,7 +10,7 @@ function useApi(what) {
 
     let API = "http://localhost:3000/" + what;
 
-    const fetchAPIData = async (url) => {
+    async function  fetchAPIData(url) {
         try {
             const result = await fetch(url);
             const moviesData = await result.json();

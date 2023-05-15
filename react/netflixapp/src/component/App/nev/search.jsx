@@ -3,14 +3,15 @@ import { useState } from "react";
 
 
 
-function Search({ setSeries, setISPlaylist, moviesData }) {
+function Search({ setSeries, setISPlaylist, movieData }) {
     const [search, setSearch] = useState("");
-
+    console.log(movieData)
+    
     function inputSearch() {
-        const result = moviesData.filter(movieInfo =>
+        const result = movieData.filter(movieInfo =>
             movieInfo.Title.toLowerCase().includes(search)
-        )
-        setSeries(result);
+            )
+            setSeries(result);
         setISPlaylist(result);
     }
 

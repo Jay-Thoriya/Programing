@@ -13,24 +13,24 @@ const SeriesDataId = createContext();
 function App() {
   const [PlaylistSeriesIds, setPlaylistSeriesIds] = useState([]);
   const disk = { PlaylistSeriesIds: PlaylistSeriesIds, setPlaylistSeriesIds: setPlaylistSeriesIds };
-
-  const { moviesData } = useApi('movies');;
+  const [movieData , setMovieData] = useState([]);
+  const { moviesData } = useApi('movies',setMovieData);
   //console.log("moviesData" , moviesData);
   
-  const [series, setSeries] = useState(moviesData);
+  const [series, setSeries] = useState(movieData);
   const [isPLaylist, setISPlaylist] = useState(series);
 
   return (
     <CursorEvent >
       <div className='cards'>List Of Top Best Netflix Series 2022
-        <Search setSeries={setSeries} setISPlaylist={setISPlaylist} moviesData={moviesData} />
+        <Search setSeries={setSeries} setISPlaylist={setISPlaylist} movieData={movieData}/>
         <Toggle />
 
       </div>
       <Playlist setISPlaylist={setISPlaylist} PlaylistSeriesIds={PlaylistSeriesIds} />
       <SeriesDataId.Provider value={disk}>
         <div className="card-container">
-          {moviesData.map((value, index) => <Card key={value.id}  {...value}
+          {isPLaylist.map((value, index) => <Card key={value.id}  {...value} moviesData={moviesData} setMovieData={setMovieData}
           />
           )}
         </div>

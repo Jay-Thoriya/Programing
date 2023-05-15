@@ -1,7 +1,7 @@
 import SocialMedia from "./socialMedia/media";
 
-function Card(props) {
-    //console.log(" proprs ",   props);
+function Card(props ) {
+
     return ( 
         <>
             <div className="card ">
