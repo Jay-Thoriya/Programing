@@ -1,25 +1,15 @@
-import { useState } from "react";
-
-
-
-
-function Search({ setSeries, setISPlaylist, movieData }) {
-    const [search, setSearch] = useState("");
-    console.log(movieData)
+import { useContext } from "react";
+import { DispatchValue } from "../App";
+ 
+function Search({ setSeries, setISPlaylist, moviesData }) {
     
-    function inputSearch() {
-        const result = movieData.filter(movieInfo =>
-            movieInfo.Title.toLowerCase().includes(search)
-            )
-            setSeries(result);
-        setISPlaylist(result);
-    }
+    const dispatch = useContext(DispatchValue);
 
+    
     return (
         <div className="searchBox">
             <input type="text" placeholder="Search....." id="textBox" onChange={e => {
-                inputSearch()
-                setSearch(e.target.value)
+                dispatch({type: "SEARCH_SERIES" , payload : e.target.value})
             }}></input>
         </div>
     );
