@@ -1,25 +1,10 @@
-
-
-function onChangeColor() {
-    const cardContainer = document.querySelector('.card-container');
-    if (cardContainer.style.backgroundColor === "black") {
-      cardContainer.style.backgroundColor = "#77b5fe";
-      document.body.style.backgroundColor = "black";
-      document.querySelector(".cards").style.color = "white";
-    }
-    else {
-      cardContainer.style.backgroundColor = "black";
-      document.body.style.backgroundColor = "#77b5fe";
-      document.querySelector(".cards").style.color = "black";
-  
-    }
-  }
+import { useContext } from "react";
+import { DispatchValue } from "../App";
 
 function Toggle(props) {
-    
-
+    const dispatch = useContext(DispatchValue);
     return (<div className="toggle"  >
-        <input type="checkbox" id="toggle_checkbox" onChange={onChangeColor}/>
+        <input type="checkbox" id="toggle_checkbox" onChange={e => dispatch({type: "TOGGLE_CHANGE"})} />
         <label htmlFor="toggle_checkbox">
             <div id="star">
                 <div className="star" id="star-1">
