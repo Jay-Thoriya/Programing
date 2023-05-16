@@ -200,7 +200,7 @@ label
 #textBox{ 
   position: absolute;
   top: -39px;
-  left: 1110px;
+  left: 1280px;
   width: 200px;
   height: 30px;
   font-size: 20px;
@@ -271,7 +271,7 @@ h7{
   height: 30px;
   position: absolute;
   top: 11px;
-  left: 1410px;  
+  left: 1600px;  
   background-color: transparent;
   border: #000;
   cursor: none  ;

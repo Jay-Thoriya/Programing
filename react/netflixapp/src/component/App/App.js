@@ -46,7 +46,7 @@ function App() {
     }
     return state
   }
-  const [state, dispatch] = useReducer(reducer, moviesData);
+  const [ , dispatch] = useReducer(reducer, moviesData);
   useEffect(() => {
     setSeries(moviesData);
   }, [moviesData])
